@@ -156,3 +156,5 @@ const withGooglePlacesAppDelegate: ConfigPlugin<{ apiKey?: string, clientKey?: s
     return config;
   });
 };
+
+module.exports = withPlaces;
