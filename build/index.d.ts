@@ -1,0 +1,12 @@
+import { ExpoConfig } from '@expo/config-types';
+import { ConfigPlugin, InfoPlist } from '@expo/config-plugins';
+import { MergeResults } from '@expo/config-plugins/build/utils/generateCode';
+export declare const MATCH_INIT: RegExp;
+export declare const withPlaces: ConfigPlugin;
+export declare function getGoogleMapsApiKey(config: ExpoConfig): string | undefined;
+export declare function getGooglePlacesClientKey(config: ExpoConfig): any;
+export declare function setGoogleMapsAndPlacesApiKey(config: ExpoConfig, { GMSApiKey, GMSPlacesClientKey, ...infoPlist }: InfoPlist): InfoPlist;
+export declare function addGoogleMapsAndPlacesAppDelegateImport(src: string): MergeResults;
+export declare function removeGoogleMapsAndPlacesAppDelegateImport(src: string): MergeResults;
+export declare function addGoogleMapsAppDelegateInit(src: string, apiKey?: string, clientKey?: string): MergeResults;
+export declare function removeGoogleMapsAndPlacesAppDelegateInit(src: string): MergeResults;
